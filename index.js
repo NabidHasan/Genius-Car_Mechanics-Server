@@ -58,7 +58,9 @@ async function run() {
 }
 run().catch(console.dir);
 
-
+app.get('/hello', (req, res) => {
+    res.send('Updated here')
+})
 app.get('/', (req, res) => {
     res.send('Running Genius Server 5000');
 });
